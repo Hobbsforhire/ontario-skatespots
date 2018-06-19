@@ -3,7 +3,7 @@
 
 # Ontario Skateparks finder built witih Nuxt.js and Express
 
-> [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap: :zap: :fire:
+> [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap: :fire: :skull:
 
 ## Installation
 
