@@ -36,6 +36,12 @@ module.exports = {
       }
     }
   },
+  modules: [
+    // Analytics
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-12301-2'
+    }]
+  ],
   serverMiddleware: [
     // API middleware
     '~/api/index.js'

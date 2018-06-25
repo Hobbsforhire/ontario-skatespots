@@ -6,35 +6,38 @@ const router = Router()
 const skateparks = {
   'Ajax': {
     'name': 'Ajax',
-    'address': 'ontario',
-    'address_url': '',
+    'address': '1955 Audley Rd. Ajax, ON L1Z 0L2, Canada ',
+    'gmap_url': 'https://goo.gl/maps/kbScMKxSzBy',
     'city': 'Ajax',
-    'photo_url': 'https://placehold.it/600x400',
-    'thumbnail_url': 'https://placehold.it/300x300'
+    'photo_url': 'https://placehold.it/2000x1125',
+    'thumbnail_url': 'https://placehold.it/450x300/333333/ffffff'
   },
   'Aurora': {
     'name': 'Aurora',
     'address': 'ontario',
     'city': 'Aurora',
-    'thumbnail_url': 'https://placehold.it/300x300'
+    'photo_url': 'https://placehold.it/2000x1125',
+    'thumbnail_url': 'https://placehold.it/450x300/333333/ffffff'
   },
   'Bala': {
     'name': 'Bala',
     'address': 'ontario',
     'city': 'Bala',
-    'thumbnail_url': 'https://placehold.it/300x300'
+    'photo_url': 'https://placehold.it/2000x1125',
+    'thumbnail_url': 'https://placehold.it/450x300/333333/ffffff'
   },
   'Bancroft': {
     'name': 'Bancroft',
     'address': 'ontario',
-    'city': 'Bancroft'
+    'city': 'Bancroft',
+    'photo_url': 'https://placehold.it/2000x1125'
   },
   'Belleville': {
     'name': 'Belleville',
     'address': 'ontario',
     'address_url': '',
     'city': 'Belleville',
-    'photo_url': 'https://placehold.it/600x400'
+    'photo_url': 'https://placehold.it/2000x1125'
   },
   'Blind-River': {
     'name': 'Blind-River',
@@ -297,7 +300,7 @@ const skateparks = {
     'address': 'ontario',
     'city': 'Tillsonburg'
   },
-    'Shelburne': {
+  'Shelburne': {
     'name': 'Shelburne',
     'address': 'ontario',
     'city': 'Shelburne'
