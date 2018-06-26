@@ -5,7 +5,7 @@
     <button class="button toggle" v-on:click='makeActive'>Toggle List</button>
     <main class="main">
       <ul class="skateparks">
-        <li class="skatepark" v-for="(skatepark, index) in skateparks" :key="index" >
+        <li class="skatepark" v-for="(skatepark, index) in skateparks" :key="index" data-section>
           <section class="section__header" :style="{ backgroundImage: 'url(' + skatepark.photo_url + ')' }">
             <h2 class="skatepark-name">{{ skatepark.name }}</h2>
           </section>
@@ -13,10 +13,13 @@
             <div class="section__content">
               <ul class="boxgrid">
                 <li class="boxgrid__item">
-                  <a href="" class="box">
+                  <div class="box weather">
                     <span class="text__large">27°C</span>
-                    <br/>
                     Cloudy
+                  </div>
+                </li>
+                <li class="boxgrid__item">
+                  <a href="" class="">
                   </a>
                 </li>
                 <li class="boxgrid__item boxgrid__item--wide">
@@ -27,6 +30,10 @@
                 <li class="boxgrid__item boxgrid__item--push">
                   <a href="" class="box box--image">
                     <img class="box__img" src="https://placehold.it/400x400" alt="">
+                  </a>
+                </li>
+                <li class="boxgrid__item">
+                  <a href="" class="">
                   </a>
                 </li>
               </ul>
@@ -77,8 +84,8 @@ export default {
 .button.toggle 
   display block 
   position fixed 
-  top 50%
-  left 80%
+  top 14%
+  left 86%
   transform translate(-50%, -50%) 
   z-index 100 
 
@@ -103,7 +110,7 @@ export default {
     height 100%
     overflow hidden
     color #fff 
-    background-color #000 
+    background-color #121519 
 
     font-family 'Montserrat', 'Roboto', 'Droid Sans', 'Helvetica Neue', sans-serif
     display grid 
@@ -158,52 +165,55 @@ export default {
           .skatepark-subtitle
             font-size 1.5rem 
             text-align left
-        .section__content 
-          padding 0
-          transform translateZ(0)
-          position relative 
-          z-index 1
-          .boxgrid 
-            display grid 
-            grid-template-columns repeat(auto-fit, minmax(150px, 1fr))
-            grid-auto-rows minmax(150px, auto)
-            grid-gap 2rem .5rem 
-            .box  
-              display flex 
-              flex 1 0 0 
-              position relative
-              border-radius 0.5rem
-              font-size 0.875rem 
-              color #fff 
-              box-shadow 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
-              tranform scale(1)
-              transition all 0.25s ease 
-              filter brightness(100%)
-              background-color #66AEE5
-              &:hover 
-                transform scale(1.07)
-                filter brightness(110%)
-                z-index 10
-              .box__img 
-                display block
-                height 100%
-                width 100% 
-                position absolute 
-                object-fit cover 
-                object-position center 
-                border-radius 0.5rem 
-            .boxgrid__item 
-              display flex
-            .boxgrid__item--wide 
-              grid-column span 2
-            .boxgrid__item--wide 
-              grid-column span 2
-              padding-left 50%
-
-
-
-  
-
-
-
+        a 
+          text-decoration none
+          .section__content 
+            padding 0
+            transform translateZ(0)
+            position relative 
+            z-index 1
+            .boxgrid 
+              display grid 
+              padding 0
+              grid-template-columns repeat(auto-fit, minmax(150px, 1fr))
+              grid-auto-rows minmax(150px, auto)
+              grid-gap 2rem .5rem 
+              .box  
+                display flex 
+                flex 1 0 0 
+                position relative
+                border-radius 0.5rem
+                font-size 0.875rem 
+                color #fff 
+                box-shadow 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
+                transform scale(1)
+                transition all 0.25s ease 
+                filter brightness(100%)
+                flex-direction column 
+                justify-content center 
+                &.weather
+                  background-color #66AEE5
+                  text-decoration none
+                  font-weight 100
+                &:hover 
+                  transform scale(1.07)
+                  filter brightness(110%)
+                  z-index 10
+                .text__large
+                  font-size 2.25rem
+                .box__img 
+                  display block
+                  height 100%
+                  width 100% 
+                  position absolute 
+                  object-fit cover 
+                  object-position center 
+                  border-radius 0.5rem 
+              .boxgrid__item 
+                display flex
+              .boxgrid__item--wide 
+                grid-column span 2
+              .boxgrid__item--wide 
+                grid-column span 2
+                padding-left 50%
 </style>

@@ -4,7 +4,7 @@
       <span>Ontario Skatespots</span>
     </div>
     <div class="header__right">
-      <p>THU, 14  JUN | 16:20</p>
+      <p v-bind:options="[ ...options ]">{{ new Date().toLocaleString('en-US', options) }}</p>
     </div>
   </header>
 </template>
@@ -26,3 +26,16 @@
       display flex
       align-items center
 </style>
+
+<script>
+export default {
+  data: () => ({
+    options: {
+      weekday: 'short',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }
+  })
+}
+</script>

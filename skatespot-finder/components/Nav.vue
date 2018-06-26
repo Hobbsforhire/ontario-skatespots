@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <ul class="nav__menu">
-      <li class="nav__item" v-for="(skatepark, index) in skateparks" :key="index" >
+      <li class="nav__item" v-for="(skatepark, index) in skateparks" :key="index" data-scroll-to>
         <nuxt-link :to="{ name: 'id', params: { id: skatepark.name }}" class="nav__link">
           <img class="media__img" :src="skatepark.thumbnail_url" />
           <span class="skatepark-name media__content">{{ skatepark.name }}</span>
@@ -33,13 +33,19 @@ export default {
   .nav
     grid-column 1 / 2
     overflow-y scroll
-    border solid 1px rgba(255, 255, 255, 0.1)
+    border-right solid 1px rgba(255, 255, 255, 0.1)
+    border-bottom solid 1px rgba(255, 255, 255, 0.1)
     .nav__menu 
       list-style-type none 
       padding 0 
       margin 0 
       .nav__item
         display flex
+        transition all 0.1s ease
+        &:hover 
+          cursor pointer
+          filter brightness(110%)
+          background-color rgba(255, 255, 255, 0.035)
         &:not(:last-child)
           border-bottom solid 1px rgba(255, 255, 255, 0.1)
         .nav__link 

@@ -9,39 +9,42 @@ const skateparks = {
     'address': '1955 Audley Rd. Ajax, ON L1Z 0L2, Canada ',
     'gmap_url': 'https://goo.gl/maps/kbScMKxSzBy',
     'city': 'Ajax',
-    'photo_url': 'https://placehold.it/2000x1125',
-    'thumbnail_url': 'https://placehold.it/450x300/333333/ffffff'
+    'photo_url': '/img/skatepark/ajax.jpg',
+    'thumbnail_url': '/img/logo.png'
   },
   'Aurora': {
     'name': 'Aurora',
     'address': 'ontario',
     'city': 'Aurora',
-    'photo_url': 'https://placehold.it/2000x1125',
-    'thumbnail_url': 'https://placehold.it/450x300/333333/ffffff'
+    'photo_url': '/img/skatepark/aurora.jpg',
+    'thumbnail_url': '/img/logo.png'
   },
   'Bala': {
     'name': 'Bala',
     'address': 'ontario',
     'city': 'Bala',
-    'photo_url': 'https://placehold.it/2000x1125',
-    'thumbnail_url': 'https://placehold.it/450x300/333333/ffffff'
+    'photo_url': '/img/skatepark/bala.jpg',
+    'thumbnail_url': '/img/logo.png'
   },
   'Bancroft': {
     'name': 'Bancroft',
     'address': 'ontario',
     'city': 'Bancroft',
-    'photo_url': 'https://placehold.it/2000x1125'
+    'photo_url': '/img/skatepark/bancroft.jpg',
+    'thumbnail_url': '/img/logo.png'
   },
   'Belleville': {
     'name': 'Belleville',
     'address': 'ontario',
     'address_url': '',
     'city': 'Belleville',
-    'photo_url': 'https://placehold.it/2000x1125'
+    'photo_url': '/img/skatepark/belleville.jpg',
+    'thumbnail_url': '/img/logo.png'
   },
   'Blind-River': {
     'name': 'Blind-River',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/blind-river.jpg',
     'city': 'Blind River'
   },
   'Bolton': {
