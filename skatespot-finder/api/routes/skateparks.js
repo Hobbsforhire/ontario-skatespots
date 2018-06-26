@@ -50,107 +50,93 @@ const skateparks = {
   'Bolton': {
     'name': 'Bolton',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/bolton.jpg',
     'city': 'Bolton'
   },
   'Bowmanville': {
     'name': 'Bowmanville',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/bowmanville.jpg',
     'city': 'Bowmanville'
   },
   'Bracebridge': {
     'name': 'Bracebridge',
     'address': 'ontario',
     'address_url': '',
-    'city': 'Bracebridge',
-    'photo_url': 'https://placehold.it/600x400'
+    'photo_url': '/img/skatepark/bracebridge.jpg',
+    'city': 'Bracebridge'
   },
   'Brampton': {
     'name': 'Brampton',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/brampton.jpg',
     'city': 'Brampton'
   },
   'Brantford': {
     'name': 'Brantford',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/brantford.jpg',
     'city': 'Brantford'
   },
   'Burlington': {
     'name': 'Burlington',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/burlington.jpg',
     'city': 'Burlington'
-  },
-  'Bolton': {
-    'name': 'Bolton',
-    'address': 'ontario',
-    'city': 'Bolton'
-  },
-  'Bowmanville': {
-    'name': 'Bowmanville',
-    'address': 'ontario',
-    'city': 'Bowmanville'
-  },
-  'Bracebridge': {
-    'name': 'Bracebridge',
-    'address': 'ontario',
-    'address_url': '',
-    'city': 'Bracebridge',
-    'photo_url': 'https://placehold.it/600x400'
-  },
-  'Brampton': {
-    'name': 'Brampton',
-    'address': 'ontario',
-    'city': 'Brampton'
-  },
-  'Brantford': {
-    'name': 'Brantford',
-    'address': 'ontario',
-    'city': 'Brantford'
   },
   'Campbellford': {
     'name': 'Campbellford',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/campbellford.jpg',
     'city': 'Campbellford'
   },
   'Cannington': {
     'name': 'Cannington',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/cannington.jpg',
     'city': 'Cannington'
   },
   'Clarkson': {
     'name': 'Clarkson',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/clarkson.jpg',
     'city': 'Clarkson'
   },
   'Courtice': {
     'name': 'Courtice',
     'address': 'ontario',
     'address_url': '',
-    'city': 'Courtice',
-    'photo_url': 'https://placehold.it/600x400'
+    'photo_url': '/img/skatepark/courtice.jpg',
+    'city': 'Courtice'
   },
   'Elgin-Mills': {
     'name': 'Elgin-Mills',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/elgin-mills.jpg',
     'city': 'Elgin Mills'
   },
   'Etobicoke': {
     'name': 'Etobicoke',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/etobicoke.jpg',
     'city': 'Etobicoke'
   },
   'Fort-Erie': {
     'name': 'Fort-Erie',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/fort-erie.jpg',
     'city': 'Fort Erie'
   },
   'Gananoque': {
     'name': 'Gananoque',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/ganonoque.jpg',
     'city': 'Gananoque'
   },
   'Gravenhurst': {
     'name': 'Gravenhurst',
     'address': 'ontario',
+    'photo_url': '/img/skatepark/gravenhurst.jpg',
     'city': 'Gravenhurst'
   },
   'Guelph': {
