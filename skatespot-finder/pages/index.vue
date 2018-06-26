@@ -9,37 +9,35 @@
           <section class="section__header" :style="{ backgroundImage: 'url(' + skatepark.photo_url + ')' }">
             <h2 class="skatepark-name">{{ skatepark.name }}</h2>
           </section>
-          <nuxt-link :to="{ name: 'id', params: { id: skatepark.name }}">
-            <div class="section__content">
-              <ul class="boxgrid">
-                <li class="boxgrid__item">
-                  <div class="box weather">
-                    <span class="text__large">27°C</span>
-                    Cloudy
-                  </div>
-                </li>
-                <li class="boxgrid__item boxgrid__item--push">
-                  <a href="" class="">
-                  </a>
-                </li>
-                <li class="boxgrid__item boxgrid__item--wide">
-                  <a href="" class="box box--image">
-                    <img class="box__img" src="https://source.unsplash.com/600x400/?ontario" alt="">
-                  </a>
-                </li>
-                <li class="boxgrid__item">
-                  <a href="" class="box box--image directions">
-                    <img class="box__img" src="~/assets/img/icons/directions-ab.svg" alt="">
-                    Directions
-                  </a>
-                </li>
-                <li class="boxgrid__item">
-                  <a href="" class="">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nuxt-link>
+          <div class="section__content">
+            <ul class="boxgrid">
+              <li class="boxgrid__item">
+                <div class="box weather">
+                  <span class="text__large">27°C</span>
+                  Cloudy
+                </div>
+              </li>
+              <li class="boxgrid__item boxgrid__item--push">
+                <a href="" class="">
+                </a>
+              </li>
+              <li class="boxgrid__item boxgrid__item--wide">
+                <nuxt-link :to="{ name: 'id', params: { id: skatepark.name }}" class="box box--image">
+                  <img class="box__img" src="https://source.unsplash.com/600x400/?ontario" alt="">
+                </nuxt-link>
+              </li>
+              <li class="boxgrid__item">
+                <a href="#" class="box box--image directions">
+                  <img class="box__img" src="~/assets/img/icons/directions-ab.svg" alt="">
+                  Directions
+                </a>
+              </li>
+              <li class="boxgrid__item">
+                <a href="" class="">
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </main>
@@ -166,62 +164,61 @@ export default {
           .skatepark-subtitle
             font-size 1.5rem 
             text-align left
-        a 
-          text-decoration none
-          .section__content 
+        .section__content 
+          padding 0
+          transform translateZ(0)
+          position relative 
+          z-index 1
+          .boxgrid 
+            display grid 
             padding 0
-            transform translateZ(0)
-            position relative 
-            z-index 1
-            .boxgrid 
-              display grid 
-              padding 0
-              grid-template-columns repeat(auto-fit, minmax(150px, 1fr))
-              grid-auto-rows minmax(150px, auto)
-              grid-gap 2rem .5rem 
-              .box  
-                display flex 
-                flex 1 0 0 
-                position relative
-                border-radius 0.5rem
-                font-size 0.875rem 
-                color #fff 
-                box-shadow 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
-                transform scale(1)
-                transition all 0.25s ease 
-                filter brightness(100%)
-                flex-direction column 
-                justify-content center 
-                &.directions
-                  background white
-                  color #121519
-                  .box__img 
-                    position relative
-                    width 40%
-                    height initial
-                &.weather
-                  background-color #66AEE5
-                  text-decoration none
-                  font-weight 100
-                &:hover 
-                  transform scale(1.07)
-                  filter brightness(110%)
-                  z-index 10
-                .text__large
-                  font-size 2.25rem
+            grid-template-columns repeat(auto-fit, minmax(150px, 1fr))
+            grid-auto-rows minmax(150px, auto)
+            grid-gap 2rem .5rem 
+            .box  
+              display flex 
+              flex 1 0 0 
+              position relative
+              border-radius 0.5rem
+              font-size 0.875rem 
+              color #fff 
+              box-shadow 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
+              transform scale(1)
+              transition all 0.25s ease 
+              filter brightness(100%)
+              flex-direction column 
+              justify-content center 
+              will-change transform
+              &.directions
+                background white
+                color #121519
                 .box__img 
-                  display block
-                  height 100%
-                  width 100% 
-                  position absolute 
-                  object-fit cover 
-                  object-position center 
-                  border-radius 0.5rem 
-              .boxgrid__item 
-                display flex
-              .boxgrid__item--wide 
-                grid-column span 2
-              .boxgrid__item--push
-                grid-column span 2
-                padding-left 50%
+                  position relative
+                  width 40%
+                  height initial
+              &.weather
+                background-color #66AEE5
+                text-decoration none
+                font-weight 100
+              &:hover 
+                transform scale(1.07)
+                filter brightness(110%)
+                z-index 10
+              .text__large
+                font-size 2.25rem
+              .box__img 
+                display block
+                height 100%
+                width 100% 
+                position absolute 
+                object-fit cover 
+                object-position center 
+                border-radius 0.5rem 
+            .boxgrid__item 
+              display flex
+            .boxgrid__item--wide 
+              grid-column span 2
+            .boxgrid__item--push
+              grid-column span 2
+              padding-left 50%
 </style>
