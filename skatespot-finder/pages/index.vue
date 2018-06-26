@@ -18,18 +18,19 @@
                     Cloudy
                   </div>
                 </li>
-                <li class="boxgrid__item">
+                <li class="boxgrid__item boxgrid__item--push">
                   <a href="" class="">
                   </a>
                 </li>
                 <li class="boxgrid__item boxgrid__item--wide">
                   <a href="" class="box box--image">
-                    <img class="box__img" src="https://source.unsplash.com/600x400/?nature" alt="">
+                    <img class="box__img" src="https://placehold.it/400x400" alt="">
                   </a>
                 </li>
-                <li class="boxgrid__item boxgrid__item--push">
-                  <a href="" class="box box--image">
-                    <img class="box__img" src="https://placehold.it/400x400" alt="">
+                <li class="boxgrid__item">
+                  <a href="" class="box box--image directions">
+                    <img class="box__img" src="~/assets/img/icons/directions-ab.svg" alt="">
+                    Directions
                   </a>
                 </li>
                 <li class="boxgrid__item">
@@ -157,7 +158,7 @@ export default {
           background-size cover 
           background-repeat no-repeat 
           background-position center center 
-          text-shadow 0 0 20px rgba(0, 0, 0, 0.25)
+          text-shadow 0 0 20px rgba(0, 0, 0, 1)
           .skatepark-name
             text-align left 
             font-weight 200
@@ -191,6 +192,13 @@ export default {
                 filter brightness(100%)
                 flex-direction column 
                 justify-content center 
+                &.directions
+                  background white
+                  color #121519
+                  .box__img 
+                    position relative
+                    width 40%
+                    height initial
                 &.weather
                   background-color #66AEE5
                   text-decoration none
@@ -213,7 +221,7 @@ export default {
                 display flex
               .boxgrid__item--wide 
                 grid-column span 2
-              .boxgrid__item--wide 
+              .boxgrid__item--push
                 grid-column span 2
                 padding-left 50%
 </style>
