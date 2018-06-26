@@ -24,7 +24,7 @@
                 </li>
                 <li class="boxgrid__item boxgrid__item--wide">
                   <a href="" class="box box--image">
-                    <img class="box__img" src="https://placehold.it/400x400" alt="">
+                    <img class="box__img" src="https://source.unsplash.com/600x400/?ontario" alt="">
                   </a>
                 </li>
                 <li class="boxgrid__item">
